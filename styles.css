@@ -7,8 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #0E0E12;
-    background-color: #0E0E12;
+    color: #dcdce6;
+    background-color: #282831;
 }
 
 .container {
@@ -66,6 +66,7 @@ body {
 
 .header-content button:hover {
     opacity: 1;
+    cursor: pointer;
 
 }
 
@@ -78,7 +79,7 @@ body {
 .main-container {
     background-color: #2a223a;
     height: 400px;
-    margin-top: 130px;
+    margin-top: 100px;
     border-radius: 10px;
 
     transition: border 0.5s;
@@ -147,3 +148,128 @@ body {
 .main-container:hover {
     border: 1px rgb(2, 255, 36) solid;
 }
+
+.under-main{
+    margin-top: 15px;
+
+}
+.under-main button{
+    border-radius: 18px;
+    padding: 15px 15px;
+    color: white;
+    background-color: #2a223a; 
+    width: 200px;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.5s;
+
+}
+.under-main button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    border: 1px solid rgb(2, 255, 36);
+    background:linear-gradient(50deg, rgba(14, 170, 3, 0) 56%, hsla(145, 50%, 40%, 1));
+}
+.card-container{
+    margin-top:20px ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 50px;
+    gap: 8px;
+
+}
+.card{
+    border-left:  rgb(2, 255, 36) solid 3px;
+    padding: 10px;
+    display: grid;
+    background-color:#2a223a ;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    color: white;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform: translateX(-10px) translateY(-10px) rotate(5deg);
+   border:   rgb(2, 255, 36) solid 2px;
+    color: white;
+}
+.card h2{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 10px;
+    grid-column: span 2 / span 2;
+    margin-right: 60px;
+    background: linear-gradient(90deg,rgb(228, 253, 2) 0%, rgb(235, 252, 1) 0%, rgba(237, 221, 83, 1) 28%);
+}
+.card p{
+  grid-column-start: 3;
+}
+.card h3{
+     grid-column: span 2 / span 2;
+    grid-row-start: 2;
+    border-bottom:3px solid rgb(2, 255, 36); ;
+}
+.card h4{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    color: rgb(2, 255, 36) ;
+    justify-self: center;
+    align-self: end;
+}
+.card-alert{
+     grid-column: span 4 / span 4;
+     padding: 5px;
+     border-radius: 10px;
+     border: 2px solid  rgb(255, 32, 2);
+     
+
+    background-color: rgb(100, 1, 1);
+    opacity: 0.4;
+    color: rgb(255, 2, 2) ;
+    transition: all 0.5s ease;
+   
+
+}
+.card-alert h2{
+    justify-self: center;
+}
+.card-2 h2,.card-4 h2{
+    background: linear-gradient(90deg,rgba(180, 58, 58, 1) 0%, rgba(253, 29, 29, 1) 50%, rgb(250, 60, 2) 100%);;
+
+}
+.card-3 h2{
+    background:linear-gradient(90deg,rgba(95, 155, 42, 1) 0%, rgba(122, 199, 87, 1) 61%, rgb(43, 250, 1) 96%);
+}
+.card-alert:hover{
+    transform: scale(1.03);
+    opacity: 1;
+
+}
+footer{
+   
+    height: 100px;
+    display: flex;
+background-color: black;
+padding: 20px;
+margin-top: 15px;
+border-radius: 10px;
+
+justify-content: space-around;
+
+}
+footer button{
+    font-size: 25px;
+color: white;
+background-color: black;
+border: none;
+transition: all 0.5s ;
+    
+}
+footer button:hover{
+     transform: translateY(-8px);
+    color: rgb(2, 255, 36);;
+}
+
